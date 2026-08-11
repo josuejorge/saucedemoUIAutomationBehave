@@ -1,5 +1,13 @@
 from behave import given, when, then
 from pages.login_page import LoginPage
+from config.config import USERNAME, PASSWORD
+
+
+@given("que estou logado no sistema")
+def step_logged_in_with_defaults(context):
+    context.login_page = LoginPage(context.driver)
+    context.login_page.navigate()
+    context.login_page.login(USERNAME, PASSWORD)
 
 
 @given("que estou na página de login")
