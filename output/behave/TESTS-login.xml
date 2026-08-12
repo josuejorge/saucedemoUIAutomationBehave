@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="51.47975730895996" tests='6' skipped='0'
+name="Login" failures='0' errors='0'><testcase time="7.326148271560669" name="Login_Com_Credenciais_Validas" status="passed"
+         classname="Login_No_Saucedemo"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Login com credenciais válidas
+                given que estou na página de login ... Status.passed in 5.412s 
+                when faço login com "standard_user" e "secret_sauce" ... Status.passed in 1.767s 
+                then devo ser redirecionado para a página de inventário ... Status.passed in 0.1473s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="6.6835455894470215" name="Login_Com_Credenciais_Invalidas" status="passed"
+         classname="Login_No_Saucedemo"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Login com credenciais inválidas
+                given que estou na página de login ... Status.passed in 3.651s 
+                when faço login com "usuario_errado" e "senha_errada" ... Status.passed in 2.835s 
+                then devo ver a mensagem de erro "Epic sadface: Username and password do not match any user in this service" ... Status.passed in 0.1971s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="4.229870557785034" name="Login_Com_Campos_Vazios" status="passed"
+         classname="Login_No_Saucedemo"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Login com campos vazios
+                given que estou na página de login ... Status.passed in 2.376s 
+                when clico em Login sem preencher os campos ... Status.passed in 1.763s 
+                then devo ver a mensagem de erro "Epic sadface: Username is required" ... Status.passed in 0.09036s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="13.2091646194458" name="Login_Com_Usuario_Bloqueado" status="passed"
+         classname="Login_No_Saucedemo"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Login com usuário bloqueado
+                given que estou na página de login ... Status.passed in 2.173s 
+                when faço login com "locked_out_user" e "secret_sauce" ... Status.passed in 10.78s 
+                then devo ver a mensagem de erro "Epic sadface: Sorry, this user has been locked out." ... Status.passed in 0.2547s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="10.482146739959717" name="Login_Com_Diferentes_Tipos_De_Usuarios_--_@1.1_" status="passed"
+         classname="Login_No_Saucedemo"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Login com diferentes tipos de usuários -- @1.1 
+                given que estou na página de login ... Status.passed in 2.093s 
+                when faço login com "standard_user" e "secret_sauce" ... Status.passed in 8.166s 
+                then devo ser redirecionado para a página de inventário ... Status.passed in 0.2229s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="9.548881530761719" name="Login_Com_Diferentes_Tipos_De_Usuarios_--_@1.2_" status="passed"
+         classname="Login_No_Saucedemo"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Login com diferentes tipos de usuários -- @1.2 
+                given que estou na página de login ... Status.passed in 2.401s 
+                when faço login com "performance_glitch_user" e "secret_sauce" ... Status.passed in 7.118s 
+                then devo ser redirecionado para a página de inventário ... Status.passed in 0.02981s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

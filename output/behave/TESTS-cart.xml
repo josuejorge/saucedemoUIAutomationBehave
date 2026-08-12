@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="45.743987798690796" tests='3' skipped='0'
+name="Cart" failures='0' errors='0'><testcase time="10.29253888130188" name="Verificar_Item_No_Carrinho" status="passed"
+         classname="Carrinho_De_Compras"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Verificar item no carrinho
+                given que estou logado no sistema ... Status.passed in 9.464s 
+                given adicionei um produto ao carrinho ... Status.passed in 0.3377s 
+                when vou para o carrinho ... Status.passed in 0.4413s 
+                then o carrinho deve conter ao menos 1 item ... Status.passed in 0.04997s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="16.61729645729065" name="Remover_Item_Do_Carrinho" status="passed"
+         classname="Carrinho_De_Compras"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Remover item do carrinho
+                given que estou logado no sistema ... Status.passed in 5.189s 
+                given adicionei um produto ao carrinho ... Status.passed in 0.3975s 
+                when vou para o carrinho ... Status.passed in 0.3752s 
+                when removo o primeiro item ... Status.passed in 0.4964s 
+                then o carrinho deve estar vazio ... Status.passed in 10.16s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="18.834152460098267" name="Continuar_Comprando_Apos_Visitar_O_Carrinho" status="passed"
+         classname="Carrinho_De_Compras"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Continuar comprando após visitar o carrinho
+                given que estou logado no sistema ... Status.passed in 16.36s 
+                given adicionei um produto ao carrinho ... Status.passed in 1.312s 
+                when vou para o carrinho ... Status.passed in 0.7245s 
+                when clico em Continuar Comprando ... Status.passed in 0.4225s 
+                then devo estar na página de inventário ... Status.passed in 0.01923s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

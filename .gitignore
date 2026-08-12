@@ -18,6 +18,9 @@ env/
 reports/
 screenshots/
 evidence/
+allure-results/
+allure-report/
+behavex-output/
 
 # IDE
 .idea/

@@ -1,2 +1,4 @@
 behave==1.2.6
+behavex
+allure-behave
 selenium==4.27.0
